@@ -11,7 +11,7 @@ package com.generation.blogPessoal.model;
 
 public class UsuarioLogin {
 	
-	private Long id;
+	private long id;
 	
 	private String nome;
 	
@@ -22,12 +22,16 @@ public class UsuarioLogin {
 	private String foto;
 	
 	private String token;
+	
+	private String tipo;
 
-	public Long getId() {
+	
+
+	public long getId() {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 
@@ -70,5 +74,14 @@ public class UsuarioLogin {
 	public void setToken(String token) {
 		this.token = token;
 	}
+
+	public String getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
 	
+		
 }

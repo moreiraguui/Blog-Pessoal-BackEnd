@@ -66,16 +66,21 @@ public class Usuario {
 	 * de um objeto Pai para um objeto Filho. 
 	 */
 	
+	private String tipo;
+	
 	@OneToMany(mappedBy = "usuario", cascade = CascadeType.REMOVE)
 	@JsonIgnoreProperties("usuario")
 	private List<Postagem> postagem;
 	
 	// Primeiro método construtor - Com os atributos
-	public Usuario(long id,	String nome, String usuario, String senha) {
+	public Usuario(long id,	String nome, String usuario, String senha, String foto, String tipo) {
 		this.id = id;
 		this.nome = nome;
 		this.usuario = usuario;
 		this.senha = senha;
+		this.foto = foto;
+		this.tipo = tipo;
+			
 	}
 	
 	// Segundo método construtor - Sem os atributos
@@ -130,5 +135,14 @@ public class Usuario {
 	public void setPostagem(List<Postagem> postagem) {
 		this.postagem = postagem;
 	}
+
+	public String getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
+	
 	
 }
