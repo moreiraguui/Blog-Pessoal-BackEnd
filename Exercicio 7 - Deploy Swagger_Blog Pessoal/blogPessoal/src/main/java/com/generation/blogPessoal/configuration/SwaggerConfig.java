@@ -29,11 +29,11 @@ import io.swagger.v3.oas.models.responses.ApiResponses;
 	                        .url("https://generation.org"))
 	                .contact(new Contact()
 	                        .name("Blog Pessoal - Guilherme")
-	                          .url("https://github.com/moreiraguui/Blog-Pessoal")
+	                          .url("https://github.com/moreiraguui/Blog-Pessoal-BackEnd")
 	                          .email("guilhermemoreira111@hotmail.com")))
 	                .externalDocs(new ExternalDocumentation()
 	                        .description("Github")
-	                        .url("https://github.com/moreiraguui/Blog-Pessoal"));
+	                        .url("https://github.com/moreiraguui/Blog-Pessoal-BackEnd"));
 	    }
 		
 		@Bean
